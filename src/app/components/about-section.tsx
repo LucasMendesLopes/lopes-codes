@@ -65,8 +65,12 @@ export function AboutSection() {
                 Minha formação técnica em informática também desempenhou um
                 papel fundamental em minha jornada, proporcionando uma base
                 sólida em lógica de programação e familiarização com diversas
-                linguagens. Quando não estou codando, estou pelas estradas
-                pegando um vento no rosto.
+                linguagens.
+              </p>
+
+              <p className="text-white">
+                OBS: Quando não estou codando, estou pelas estradas pegando um
+                vento no rosto.
               </p>
             </motion.div>
           </motion.div>
