@@ -22,10 +22,10 @@ export function ProjectCard({ title }: IProjectCard) {
   return (
     <motion.a
       href="#projects"
-      className="group/text flex h-[15rem] w-full items-center justify-center rounded-2xl bg-zinc-600 hover:bg-zinc-700"
+      className="group/text flex h-[15rem] w-full items-center justify-center rounded-2xl bg-zinc-600 lg:hover:bg-zinc-700"
       variants={item}
     >
-      <div className="gap flex flex-col gap-3 group-hover/text:flex lg:hidden">
+      <div className="gap flex flex-col gap-3 group-hover/text:opacity-100 lg:opacity-0">
         <span className="text-2xl font-bold text-white">{title}</span>
       </div>
     </motion.a>

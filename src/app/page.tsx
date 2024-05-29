@@ -14,6 +14,12 @@ export default function Home() {
       <AboutSection />
       <TecnologiesSection />
       <ProjectsSection />
+
+      <footer className="flex h-16 w-full items-center justify-center border-t">
+        <span className="text-white">
+          © Lucas Codes. Todos os direitos reservados
+        </span>
+      </footer>
     </>
   )
 }

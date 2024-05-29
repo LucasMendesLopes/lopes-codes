@@ -18,7 +18,7 @@ export function ProjectsSection() {
 
   return (
     <section
-      className="flex h-full w-full items-center justify-center pt-28 lg:h-screen lg:pt-0"
+      className="mb-10 flex h-full w-full items-center justify-center pt-28 lg:h-screen lg:pt-0"
       id="projects"
     >
       <div className="container flex-col gap-10">
