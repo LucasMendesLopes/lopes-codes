@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #020617;
+  border-radius: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rebeccapurple;
+  border-radius: 15px;
+}
+
+  body {
+    @apply bg-slate-950;
+    font-family: sans-serif;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+
+  .container {
+    @apply flex justify-between max-w-screen-xl px-4;
+  }
+
+  
