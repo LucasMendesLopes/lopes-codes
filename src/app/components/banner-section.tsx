@@ -15,7 +15,7 @@ export function BannerSection() {
             className="text-3xl font-bold text-white md:text-4xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, ease: 'easeIn' }}
+            transition={{ duration: 0.5, ease: 'easeIn', delay: 0.2 }}
           >
             Lucas Mendes Lopes
           </motion.h1>
@@ -33,21 +33,8 @@ export function BannerSection() {
             opacity: 1,
             transition: { duration: 1, delay: 0.6, ease: 'easeIn' },
           }}
-        >
-          <motion.img
-            initial={{ y: 0 }}
-            animate={{ y: -50 }}
-            transition={{
-              duration: 1,
-              repeat: Infinity,
-              repeatType: 'reverse',
-              ease: 'easeInOut',
-            }}
-            src="/images/astronaut.png"
-            className="w-[32rem]"
-            alt=""
-          />
-        </motion.div>
+          className="size-[20rem] rounded-[60%40%32%71%/60%30%70%40%] bg-[url(../../assets/photo.jpg)] bg-cover bg-center md:size-[25rem]"
+        />
       </div>
     </section>
   )

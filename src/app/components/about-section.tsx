@@ -11,14 +11,12 @@ export function AboutSection() {
       <div className="container items-center">
         <div className="flex flex-col items-center gap-5 lg:flex-row">
           <motion.div
-            className="flex h-96 w-full items-center justify-center rounded-lg bg-zinc-600 md:size-[31.25rem]"
+            className="flex h-96 w-full items-center justify-center rounded-2xl bg-[url(../../assets/moto.jpg)] bg-cover bg-center md:size-[31.25rem]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             exit={{ y: 0 }}
-            transition={{ ease: 'easeOut', duration: 0.5, delay: 0.2 }}
-          >
-            <p className="text-white">FOTO</p>
-          </motion.div>
+            transition={{ ease: 'linear', duration: 0.5, delay: 0.2 }}
+          />
 
           <motion.div className="flex flex-1 flex-col gap-6">
             <motion.h2
@@ -26,7 +24,7 @@ export function AboutSection() {
               initial={{ opacity: 0, x: 150 }}
               whileInView={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 150 }}
-              transition={{ ease: 'easeOut', duration: 0.5, delay: 0.4 }}
+              transition={{ ease: 'linear', duration: 0.5, delay: 0.5 }}
             >
               Sobre mim
             </motion.h2>
@@ -36,39 +34,39 @@ export function AboutSection() {
               initial={{ opacity: 0, x: 150 }}
               whileInView={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 150 }}
-              transition={{ ease: 'easeOut', duration: 0.5, delay: 0.5 }}
+              transition={{ ease: 'linear', duration: 0.5, delay: 0.7 }}
             >
               <p className="text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates, quis veritatis! Esse blanditiis doloribus, quibusdam
-                necessitatibus facilis voluptatum, quod libero iure quidem
-                deleniti minus reiciendis illum ducimus porro ipsum beatae!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-                velit voluptatem. Natus, officia aut, quos corrupti distinctio
-                accusamus sunt beatae placeat odio, laborum dicta. Ipsum atque
-                quasi veniam odio sed.
+                Com uma trajetória de 3 anos no mercado de programação, adquiri
+                experiência valiosa que moldou minha carreira. Iniciei minha
+                jornada na Digital Business, onde mergulhei profundamente no
+                desenvolvimento web, focando em HTML, CSS e JavaScript.
+                Trabalhei na criação de páginas web responsivas e animações
+                publicitárias para multinacionais, o que me proporcionou uma
+                base sólida em Frontend e uma compreensão profunda das
+                tecnologias essenciais para construir interfaces cativantes e
+                eficazes.
               </p>
 
               <p className="text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-                dolores magnam! Consectetur accusamus totam nostrum? Laborum,
-                neque. Ipsum velit quas temporibus placeat assumenda eaque,
-                libero, consequuntur pariatur nam, a rem. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Dolor, dolores magnam!
-                Consectetur accusamus totam nostrum? Laborum, neque. Ipsum velit
-                quas temporibus placeat assumenda eaque, libero, consequuntur
-                pariatur nam, a rem.
+                Atualmente, faço parte da equipe da Paipe Tecnologia e Inovação,
+                onde continuo aprimorando minhas habilidades e contribuindo para
+                o desenvolvimento de aplicações web inovadoras. Tenho orgulho de
+                estar envolvido em projetos desafiadores que ampliam meu
+                conhecimento em tecnologias como HTML, CSS, JavaScript,
+                TypeScript, React JS, Context API, Styled Components, Tailwind
+                CSS, Material-UI (MUI), integrações com API REST, metodologias
+                ágeis como Scrum e Kanban, gerenciamento de código com Git e
+                utilização do GitFlow, além de colaboração em plataformas como
+                GitLab, Trello e Jira.
               </p>
 
               <p className="text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-                dolores magnam! Consectetur accusamus totam nostrum? Laborum,
-                neque. Ipsum velit quas temporibus placeat assumenda eaque,
-                libero, consequuntur pariatur nam, a rem. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Dolor, dolores magnam!
-                Consectetur accusamus totam nostrum? Laborum, neque. Ipsum velit
-                quas temporibus placeat assumenda eaque, libero, consequuntur
-                pariatur nam, a rem.
+                Minha formação técnica em informática também desempenhou um
+                papel fundamental em minha jornada, proporcionando uma base
+                sólida em lógica de programação e familiarização com diversas
+                linguagens. Quando não estou codando, estou pelas estradas
+                pegando um vento no rosto.
               </p>
             </motion.div>
           </motion.div>

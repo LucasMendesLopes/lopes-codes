@@ -25,7 +25,7 @@ export function AnimatedText({
       <motion.span
         initial="hidden"
         animate="visible"
-        transition={{ staggerChildren: 0.05, delay: 0.4 }}
+        transition={{ staggerChildren: 0.05, delay: 0.4, ease: 'easeIn' }}
         aria-hidden
       >
         {text.split('').map((char, i) => (

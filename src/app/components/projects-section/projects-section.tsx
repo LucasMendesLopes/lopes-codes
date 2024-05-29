@@ -31,12 +31,12 @@ export function ProjectsSection() {
           whileInView="show"
           exit="hidden"
         >
-          <ProjectCard title="Projeto 1" subTitle="Website" />
-          <ProjectCard title="Projeto 2" subTitle="Website" />
-          <ProjectCard title="Projeto 3" subTitle="Website" />
-          <ProjectCard title="Projeto 4" subTitle="Website" />
-          <ProjectCard title="Projeto 5" subTitle="Website" />
-          <ProjectCard title="Projeto 6" subTitle="Website" />
+          <ProjectCard title="Projeto 1" />
+          <ProjectCard title="Projeto 2" />
+          <ProjectCard title="Projeto 3" />
+          <ProjectCard title="Projeto 4" />
+          <ProjectCard title="Projeto 5" />
+          <ProjectCard title="Projeto 6" />
         </motion.div>
       </div>
     </section>

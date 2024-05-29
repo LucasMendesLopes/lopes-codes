@@ -3,10 +3,9 @@ import { motion } from 'framer-motion'
 
 interface IProjectCard {
   title: string
-  subTitle: string
 }
 
-export function ProjectCard({ title, subTitle }: IProjectCard) {
+export function ProjectCard({ title }: IProjectCard) {
   const item = {
     hidden: {
       opacity: 0,
@@ -23,12 +22,11 @@ export function ProjectCard({ title, subTitle }: IProjectCard) {
   return (
     <motion.a
       href="#projects"
-      className="group/text flex h-[15rem] w-full items-center justify-center rounded-lg bg-zinc-600 hover:bg-zinc-700"
+      className="group/text flex h-[15rem] w-full items-center justify-center rounded-2xl bg-zinc-600 hover:bg-zinc-700"
       variants={item}
     >
       <div className="gap flex flex-col gap-3 group-hover/text:flex lg:hidden">
-        <h2 className="text-2xl font-bold text-cyan-300">{title}</h2>
-        <h3 className="text-xl font-medium text-purple-900">{subTitle}</h3>
+        <span className="text-2xl font-bold text-white">{title}</span>
       </div>
     </motion.a>
   )
