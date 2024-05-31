@@ -23,7 +23,7 @@ export function Header() {
           </button>
 
           <nav
-            className={`absolute left-0 top-12 flex transition-all duration-200 ease-out [&>*]:transition-all ${isOpen ? 'h-96 [&>*]:opacity-100' : 'h-0 p-0 [&>*]:opacity-0'} w-full flex-col items-center justify-between gap-6 bg-[#1C1C1C] p-3 font-sans text-lg font-semibold text-white`}
+            className={`absolute left-0 top-12 flex transition-all duration-200 ease-out [&>*]:transition-all ${isOpen ? 'h-96 p-3 [&>*]:opacity-100' : 'h-0 p-0 [&>*]:opacity-0'} w-full flex-col items-center justify-between gap-6 bg-[#1C1C1C] font-sans text-lg font-semibold text-white`}
             onClick={() => setIsOpen(false)}
           >
             <a
