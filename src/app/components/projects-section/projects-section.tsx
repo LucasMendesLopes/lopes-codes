@@ -10,7 +10,7 @@ export function ProjectsSection() {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.2,
+        delayChildren: 0.4,
         ease: 'easeOut',
       },
     },
@@ -22,7 +22,15 @@ export function ProjectsSection() {
       id="projects"
     >
       <div className="container flex-col gap-10">
-        <h2 className="text-4xl text-cyan-300">Projetos</h2>
+        <motion.h2
+          className="text-4xl text-[#8685EF]"
+          initial={{ opacity: 0, x: 150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 150 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.2 }}
+        >
+          Projetos
+        </motion.h2>
 
         <motion.div
           className="grid h-full w-full grid-cols-1 items-center justify-center gap-4 md:grid-cols-2 lg:grid-cols-3"

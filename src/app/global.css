@@ -8,18 +8,18 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #020617;
+  background: transparent;
   border-radius: 15px;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rebeccapurple;
+  background-color: #8685EF;
   border-radius: 15px;
 }
 
   body {
-    @apply bg-slate-950;
-    font-family: sans-serif;
+    @apply bg-[#1C1C1C];
+    overflow-x: hidden;
   }
   
   html {

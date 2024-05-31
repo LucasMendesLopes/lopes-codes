@@ -1,3 +1,7 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
 export function TecnologiesSection() {
   return (
     <section
@@ -5,7 +9,15 @@ export function TecnologiesSection() {
       id="tecnologies"
     >
       <div className="container">
-        <h2 className="text-4xl text-cyan-300">Tecnologias</h2>
+        <motion.h2
+          className="text-4xl text-[#8685EF]"
+          initial={{ opacity: 0, x: 150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 150 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.2 }}
+        >
+          Tecnologias
+        </motion.h2>
       </div>
     </section>
   )

@@ -23,7 +23,7 @@ export function BannerSection() {
           <AnimatedText
             text="<Frontend Developer/>"
             el="h2"
-            className="text-xl font-semibold text-cyan-300"
+            className="text-xl font-semibold text-[#8685EF]"
           />
         </div>
 
