@@ -20,7 +20,7 @@ export function AboutSection() {
 
           <motion.div className="flex flex-1 flex-col gap-6">
             <motion.h2
-              className="text-3xl font-semibold text-[#8685EF]"
+              className="text-3xl font-semibold text-primary-blue"
               initial={{ opacity: 0, x: 150 }}
               whileInView={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 150 }}

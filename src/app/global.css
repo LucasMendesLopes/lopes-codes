@@ -13,12 +13,12 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #8685EF;
+  @apply bg-primary-blue;
   border-radius: 15px;
 }
 
   body {
-    @apply bg-[#1C1C1C];
+    @apply bg-gray;
   }
   
   html {

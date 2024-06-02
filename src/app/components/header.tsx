@@ -28,28 +28,28 @@ export function Header() {
           >
             <a
               href="#about"
-              className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-[#8685EF] after:transition-transform after:content-[''] hover:after:scale-x-100"
+              className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-primary-blue after:transition-transform after:content-[''] hover:after:scale-x-100"
             >
               Sobre
             </a>
 
             <a
               href="#tecnologies"
-              className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-[#8685EF] after:transition-transform after:content-[''] hover:after:scale-x-100"
+              className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-primary-blue after:transition-transform after:content-[''] hover:after:scale-x-100"
             >
               Tecnologias
             </a>
 
             <a
               href="#projects"
-              className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-[#8685EF] after:transition-transform after:content-[''] hover:after:scale-x-100"
+              className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-primary-blue after:transition-transform after:content-[''] hover:after:scale-x-100"
             >
               Projetos
             </a>
 
             <a
               href="#contact"
-              className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-[#8685EF] after:transition-transform after:content-[''] hover:after:scale-x-100"
+              className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-primary-blue after:transition-transform after:content-[''] hover:after:scale-x-100"
             >
               Contato
             </a>
@@ -59,28 +59,28 @@ export function Header() {
         <nav className="hidden gap-6 font-sans text-lg font-semibold text-white md:flex">
           <a
             href="#about"
-            className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-[#8685EF] after:transition-transform after:content-[''] hover:after:scale-x-100"
+            className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-primary-blue after:transition-transform after:content-[''] hover:after:scale-x-100"
           >
             Sobre
           </a>
 
           <a
             href="#tecnologies"
-            className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-[#8685EF] after:transition-transform after:content-[''] hover:after:scale-x-100"
+            className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-primary-blue after:transition-transform after:content-[''] hover:after:scale-x-100"
           >
             Tecnologias
           </a>
 
           <a
             href="#projects"
-            className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-[#8685EF] after:transition-transform after:content-[''] hover:after:scale-x-100"
+            className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-primary-blue after:transition-transform after:content-[''] hover:after:scale-x-100"
           >
             Projetos
           </a>
 
           <a
             href="#contact"
-            className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-[#8685EF] after:transition-transform after:content-[''] hover:after:scale-x-100"
+            className="inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-primary-blue after:transition-transform after:content-[''] hover:after:scale-x-100"
           >
             Contato
           </a>
