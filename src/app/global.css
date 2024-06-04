@@ -18,15 +18,19 @@
 }
 
   body {
-    @apply bg-gray;
+    @apply bg-gray flex flex-col items-center justify-center;
   }
   
   html {
     @apply scroll-smooth;
   }
 
-  .container {
-    @apply flex justify-between max-w-screen-xl px-4 overflow-hidden;
+  .section-container{
+    @apply flex h-full w-full items-center justify-center pt-24
+  }
+  
+  .centralized-container {
+    @apply w-full max-w-screen-xl px-4 overflow-hidden;
   }
 
   

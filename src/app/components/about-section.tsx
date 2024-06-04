@@ -1,22 +1,30 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { Moto } from '@/assets'
+import Image from 'next/image'
 
 export function AboutSection() {
   return (
-    <motion.main
-      className="flex h-full w-full items-center justify-center overflow-hidden pt-28 lg:h-screen lg:pt-0"
-      id="about"
-    >
-      <div className="container items-center">
-        <div className="flex flex-col items-center gap-5 lg:flex-row">
+    <motion.main className="section-container 2xl:h-screen 2xl:p-0" id="about">
+      <div className="centralized-container">
+        <div className="flex flex-col items-center gap-5 xl:flex-row">
           <motion.div
-            className="flex h-96 w-full items-center justify-center rounded-2xl bg-[url(../../assets/moto.jpg)] bg-cover bg-center md:size-[31.25rem]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             exit={{ y: 0 }}
             transition={{ ease: 'linear', duration: 0.5, delay: 0.2 }}
-          />
+            className="relative h-96 w-full md:size-[31.25rem]"
+          >
+            <Image
+              src={Moto}
+              alt={''}
+              placeholder="blur"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-2xl"
+            />
+          </motion.div>
 
           <motion.div className="flex flex-1 flex-col gap-6">
             <motion.h2

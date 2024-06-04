@@ -17,35 +17,34 @@ export function ProjectsSection() {
   }
 
   return (
-    <section
-      className="mb-10 flex h-full w-full items-center justify-center pt-28 lg:h-screen lg:pt-0"
-      id="projects"
-    >
-      <div className="container flex-col gap-10">
-        <motion.h2
-          className="text-4xl text-primary-blue"
-          initial={{ opacity: 0, x: 150 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 150 }}
-          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.2 }}
-        >
-          Projetos
-        </motion.h2>
+    <section className="section-container pb-20" id="projects">
+      <div className="centralized-container">
+        <div className="flex h-full w-full flex-col gap-10">
+          <motion.h2
+            className="text-4xl text-white"
+            initial={{ opacity: 0, x: 150 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 150 }}
+            transition={{ ease: 'easeOut', duration: 0.5, delay: 0.2 }}
+          >
+            Projetos
+          </motion.h2>
 
-        <motion.div
-          className="grid h-full w-full grid-cols-1 items-center justify-center gap-4 md:grid-cols-2 lg:grid-cols-3"
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          exit="hidden"
-        >
-          <ProjectCard title="Projeto 1" />
-          <ProjectCard title="Projeto 2" />
-          <ProjectCard title="Projeto 3" />
-          <ProjectCard title="Projeto 4" />
-          <ProjectCard title="Projeto 5" />
-          <ProjectCard title="Projeto 6" />
-        </motion.div>
+          <motion.div
+            className="grid h-full w-full grid-cols-1 items-center justify-center gap-4 md:grid-cols-2 lg:grid-cols-3"
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            exit="hidden"
+          >
+            <ProjectCard title="Projeto 1" />
+            <ProjectCard title="Projeto 2" />
+            <ProjectCard title="Projeto 3" />
+            <ProjectCard title="Projeto 4" />
+            <ProjectCard title="Projeto 5" />
+            <ProjectCard title="Projeto 6" />
+          </motion.div>
+        </div>
       </div>
     </section>
   )
