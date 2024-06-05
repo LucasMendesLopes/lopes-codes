@@ -65,59 +65,83 @@ export function TecnologiesSection() {
             exit="hidden"
           >
             <motion.div
-              className="relative flex h-32 w-[45%] items-center justify-center rounded-2xl border border-primary-blue bg-zinc-800 duration-500 sm:size-32 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={HTMLIcon} alt={''} className="size-14" />
+
+              <span className="text-sm font-semibold text-white">HTML</span>
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] items-center justify-center rounded-2xl border border-primary-blue bg-zinc-800 duration-500 sm:size-32 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={CSSIcon} alt={''} className="size-14" />
+
+              <span className="text-sm font-semibold text-white">CSS</span>
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] items-center justify-center rounded-2xl border border-primary-blue bg-zinc-800 duration-500 sm:size-32 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={JSIcon} alt={''} className="size-14" />
+
+              <span className="text-sm font-semibold text-white">
+                JavaScript
+              </span>
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] items-center justify-center rounded-2xl border border-primary-blue bg-zinc-800 duration-500 sm:size-32 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={TSIcon} alt={''} className="size-14" />
+
+              <span className="text-sm font-semibold text-white">
+                TypeScript
+              </span>
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] items-center justify-center rounded-2xl border border-primary-blue bg-zinc-800 duration-500 sm:size-32 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={ReactIcon} alt={''} className="size-14" />
+
+              <span className="text-sm font-semibold text-white">React JS</span>
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] items-center justify-center rounded-2xl border border-primary-blue bg-zinc-800 duration-500 sm:size-32 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={NextIcon} alt={''} className="size-14" />
+
+              <span className="text-sm font-semibold text-white">Next JS</span>
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] items-center justify-center rounded-2xl border border-primary-blue bg-zinc-800 duration-500 sm:size-32 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={StyledIcon} alt={''} className="size-14" />
+
+              <span className="text-sm font-semibold text-white">
+                Styled Components
+              </span>
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] items-center justify-center rounded-2xl border border-primary-blue bg-zinc-800 duration-500 sm:size-32 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={TailwindIcon} alt={''} className="size-14" />
+
+              <span className="text-sm font-semibold text-white">
+                Tailwind CSS
+              </span>
             </motion.div>
           </motion.div>
         </div>
