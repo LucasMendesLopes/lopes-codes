@@ -6,7 +6,7 @@ export function BannerSection() {
   return (
     <section
       id="banner"
-      className="flex h-[calc(100vh-6rem)] w-full items-center justify-center md:h-[calc(100vh-10rem)]"
+      className="flex h-[30rem] w-full items-center justify-center sm:h-[calc(100vh-6rem)]"
     >
       <div className="centralized-container">
         <div className="flex max-w-[45rem] flex-col gap-8">
@@ -46,8 +46,8 @@ export function BannerSection() {
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
             href="#about"
             className="w-full rounded-2xl border border-primary-blue p-4 text-center text-lg
-                font-semibold text-white duration-300 hover:border-white
-                hover:text-primary-blue sm:w-72"
+                font-semibold text-white duration-300 sm:w-72
+                lg:hover:border-white lg:hover:text-primary-blue"
           >
             Saiba mais
           </motion.a>
