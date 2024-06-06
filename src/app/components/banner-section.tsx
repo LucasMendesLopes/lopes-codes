@@ -1,9 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { AnimatedText } from './animated-text'
-import Image from 'next/image'
-import { Photo } from '@/assets'
 
 export function BannerSection() {
   return (
@@ -12,41 +9,48 @@ export function BannerSection() {
       className="flex h-[calc(100vh-6rem)] w-full items-center justify-center md:h-[calc(100vh-10rem)]"
     >
       <div className="centralized-container">
-        <div className="flex h-full w-full flex-col items-center justify-between gap-20 lg:flex-row lg:gap-0">
-          <div className="flex flex-col gap-3">
-            <motion.h1
-              className="text-3xl font-bold text-white md:text-4xl"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, ease: 'easeIn', delay: 0.2 }}
-            >
-              Lucas Mendes Lopes
-            </motion.h1>
-
-            <AnimatedText
-              text="<Frontend Developer/>"
-              el="h2"
-              className="text-xl font-semibold text-primary-blue"
-            />
-          </div>
-
+        <div className="flex max-w-[45rem] flex-col gap-8">
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{
-              opacity: 1,
-              transition: { duration: 1, delay: 0.6, ease: 'easeIn' },
-            }}
-            className="relative size-[20rem] rounded-full md:size-[25rem]"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
           >
-            <Image
-              src={Photo}
-              alt={''}
-              placeholder="blur"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-full"
-            />
+            <h1 className="text-xl font-semibold text-white sm:text-3xl md:text-4xl">
+              Meu nome é Lucas Mendes lopes,
+            </h1>
+
+            <span className="text-xl font-semibold text-white sm:text-3xl md:text-4xl">
+              sou{' '}
+              <span className="text-primary-blue">
+                {'<Desenvolvedor Frontend/>'}
+              </span>
+            </span>
           </motion.div>
+
+          <motion.span
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
+            className="text-zinc-300 sm:text-lg"
+          >
+            Transformo ideias em projetos inovadores que fazem a diferença.
+            Minha experiência em desenvolvimento web me capacita a criar
+            soluções que se destacam. Estou preparado para contribuir com sua
+            equipe e impulsionar o sucesso da sua empresa através de soluções
+            digitais impactantes.
+          </motion.span>
+
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
+            href="#about"
+            className="w-full rounded-2xl border border-primary-blue p-4 text-center text-lg
+                font-semibold text-white duration-300 hover:border-white
+                hover:text-primary-blue sm:w-72"
+          >
+            Saiba mais
+          </motion.a>
         </div>
       </div>
     </section>
