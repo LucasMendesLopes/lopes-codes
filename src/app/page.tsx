@@ -21,11 +21,11 @@ export default function Home() {
           <span className="text-white">
             Copyright © 2024{' '}
             <Link
-              href="https://lucascodes.vercel.app"
+              href="https://lopescodes.com"
               className="text-primary-blue"
               target="_blank"
             >
-              lucascodes.vercel.app
+              lopescodes.com
             </Link>
             . Todos os direitos reservados
           </span>
