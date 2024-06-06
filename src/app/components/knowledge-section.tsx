@@ -11,9 +11,13 @@ import {
   NextIcon,
   StyledIcon,
   TailwindIcon,
+  TrelloIcon,
+  GitIcon,
+  GithubIcon,
+  GitlabIcon,
 } from '@/assets'
 
-export function TecnologiesSection() {
+export function KnowledgeSection() {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -41,10 +45,7 @@ export function TecnologiesSection() {
   }
 
   return (
-    <section
-      className="section-container 2xl:h-screen 2xl:p-0"
-      id="tecnologies"
-    >
+    <section className="section-container 2xl:h-screen 2xl:p-0" id="knowledge">
       <div className="centralized-container">
         <div className="flex h-full w-full flex-col gap-10">
           <motion.h2
@@ -54,7 +55,7 @@ export function TecnologiesSection() {
             exit={{ opacity: 0, x: 150 }}
             transition={{ ease: 'easeOut', duration: 0.5, delay: 0.2 }}
           >
-            Tecnologias
+            Conhecimentos
           </motion.h2>
 
           <motion.div
@@ -142,6 +143,42 @@ export function TecnologiesSection() {
               <span className="text-sm font-semibold text-white">
                 Tailwind CSS
               </span>
+            </motion.div>
+
+            <motion.div
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              variants={item}
+            >
+              <Image src={GitIcon} alt={''} className="size-14" />
+
+              <span className="text-sm font-semibold text-white">Git</span>
+            </motion.div>
+
+            <motion.div
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              variants={item}
+            >
+              <Image src={GithubIcon} alt={''} className="size-14" />
+
+              <span className="text-sm font-semibold text-white">Github</span>
+            </motion.div>
+
+            <motion.div
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              variants={item}
+            >
+              <Image src={GitlabIcon} alt={''} className="size-14" />
+
+              <span className="text-sm font-semibold text-white">Gitlab</span>
+            </motion.div>
+
+            <motion.div
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              variants={item}
+            >
+              <Image src={TrelloIcon} alt={''} className="size-14" />
+
+              <span className="text-sm font-semibold text-white">Trello</span>
             </motion.div>
           </motion.div>
         </div>

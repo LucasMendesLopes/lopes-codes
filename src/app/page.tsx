@@ -4,7 +4,7 @@ import {
   BannerSection,
   Header,
   ProjectsSection,
-  TecnologiesSection,
+  KnowledgeSection,
 } from './components'
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <BannerSection />
       <AboutSection />
-      <TecnologiesSection />
+      <KnowledgeSection />
       <ProjectsSection />
 
       <footer className="flex h-16 w-full items-center justify-center border-t border-white text-center">

@@ -29,7 +29,7 @@ export function Header() {
             >
               <Link href="#about">Sobre</Link>
 
-              <Link href="#tecnologies">Tecnologias</Link>
+              <Link href="#knowledge">Conhecimentos</Link>
 
               <Link href="#projects">Projetos</Link>
 
@@ -42,8 +42,8 @@ export function Header() {
               Sobre
             </Link>
 
-            <Link href="#tecnologies" className="nav-item">
-              Tecnologias
+            <Link href="#knowledge" className="nav-item">
+              Conhecimentos
             </Link>
 
             <Link href="#projects" className="nav-item">
