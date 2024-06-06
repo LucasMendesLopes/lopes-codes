@@ -35,9 +35,8 @@ export function BannerSection() {
           >
             Transformo ideias em projetos inovadores que fazem a diferença.
             Minha experiência em desenvolvimento web me capacita a criar
-            soluções que se destacam. Estou preparado para contribuir com sua
-            equipe e impulsionar o sucesso da sua empresa através de soluções
-            digitais impactantes.
+            soluções que se destacam. Estou preparado para contribuir e
+            impulsionar através de soluções digitais impactantes.
           </motion.span>
 
           <motion.a
