@@ -18,7 +18,7 @@
 }
 
   body {
-    @apply bg-gray flex flex-col items-center justify-center;
+    @apply bg-zinc-900 flex flex-col items-center justify-center;
   }
   
   html {
@@ -26,7 +26,7 @@
   }
 
   .section-container{
-    @apply flex h-full w-full items-center justify-center pt-24
+    @apply flex h-full w-full items-center justify-center pt-24 pb-24
   }
   
   .centralized-container {

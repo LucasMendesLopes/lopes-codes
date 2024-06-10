@@ -12,6 +12,8 @@ import TrelloIcon from './trello-icon.svg'
 import GitIcon from './git-icon.svg'
 import GithubIcon from './github-icon.svg'
 import GitlabIcon from './gitlab-icon.svg'
+import Logo from './logo.png'
+import Logo2 from './logo-2.png'
 
 export {
   Moto,
@@ -28,4 +30,6 @@ export {
   GitIcon,
   GithubIcon,
   GitlabIcon,
+  Logo,
+  Logo2,
 }

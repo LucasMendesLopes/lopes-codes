@@ -45,7 +45,10 @@ export function KnowledgeSection() {
   }
 
   return (
-    <section className="section-container 2xl:h-screen 2xl:p-0" id="knowledge">
+    <section
+      className="section-container bg-zinc-800 2xl:h-screen 2xl:p-0"
+      id="knowledge"
+    >
       <div className="centralized-container">
         <div className="flex h-full w-full flex-col gap-10">
           <motion.h2
@@ -66,7 +69,7 @@ export function KnowledgeSection() {
             exit="hidden"
           >
             <motion.div
-              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary-blue bg-transparent p-2 duration-500 sm:size-40 lg:border-zinc-400 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={HTMLIcon} alt={''} className="size-14" />
@@ -75,7 +78,7 @@ export function KnowledgeSection() {
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary-blue bg-transparent p-2 duration-500 sm:size-40 lg:border-zinc-400 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={CSSIcon} alt={''} className="size-14" />
@@ -84,7 +87,7 @@ export function KnowledgeSection() {
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary-blue bg-transparent p-2 duration-500 sm:size-40 lg:border-zinc-400 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={JSIcon} alt={''} className="size-14" />
@@ -95,7 +98,7 @@ export function KnowledgeSection() {
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary-blue bg-transparent p-2 duration-500 sm:size-40 lg:border-zinc-400 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={TSIcon} alt={''} className="size-14" />
@@ -106,7 +109,7 @@ export function KnowledgeSection() {
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary-blue bg-transparent p-2 duration-500 sm:size-40 lg:border-zinc-400 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={ReactIcon} alt={''} className="size-14" />
@@ -115,7 +118,7 @@ export function KnowledgeSection() {
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary-blue bg-transparent p-2 duration-500 sm:size-40 lg:border-zinc-400 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={NextIcon} alt={''} className="size-14" />
@@ -124,7 +127,7 @@ export function KnowledgeSection() {
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary-blue bg-transparent p-2 duration-500 sm:size-40 lg:border-zinc-400 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={StyledIcon} alt={''} className="size-14" />
@@ -135,7 +138,7 @@ export function KnowledgeSection() {
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary-blue bg-transparent p-2 duration-500 sm:size-40 lg:border-zinc-400 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={TailwindIcon} alt={''} className="size-14" />
@@ -146,7 +149,7 @@ export function KnowledgeSection() {
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary-blue bg-transparent p-2 duration-500 sm:size-40 lg:border-zinc-400 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={GitIcon} alt={''} className="size-14" />
@@ -155,7 +158,7 @@ export function KnowledgeSection() {
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary-blue bg-transparent p-2 duration-500 sm:size-40 lg:border-zinc-400 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={GithubIcon} alt={''} className="size-14" />
@@ -164,7 +167,7 @@ export function KnowledgeSection() {
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary-blue bg-transparent p-2 duration-500 sm:size-40 lg:border-zinc-400 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={GitlabIcon} alt={''} className="size-14" />
@@ -173,7 +176,7 @@ export function KnowledgeSection() {
             </motion.div>
 
             <motion.div
-              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border border-primary-blue bg-zinc-800 p-2 duration-500 sm:size-40 lg:border-zinc-700 lg:hover:border-primary-blue"
+              className="relative flex h-32 w-[45%] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary-blue bg-transparent p-2 duration-500 sm:size-40 lg:border-zinc-400 lg:hover:border-primary-blue"
               variants={item}
             >
               <Image src={TrelloIcon} alt={''} className="size-14" />

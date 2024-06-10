@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import {
   AboutSection,
   BannerSection,
@@ -16,18 +15,10 @@ export default function Home() {
       <KnowledgeSection />
       <ProjectsSection />
 
-      <footer className="flex h-16 w-full items-center justify-center border-t border-white text-center">
+      <footer className="flex h-16 w-full items-center justify-center border-t border-zinc-300 text-center">
         <div className="centralized-container ">
           <span className="text-white">
-            Copyright © 2024{' '}
-            <Link
-              href="https://lopescodes.com"
-              className="text-primary-blue"
-              target="_blank"
-            >
-              lopescodes.com
-            </Link>
-            . Todos os direitos reservados
+            2024 © Todos os direitos reservados
           </span>
         </div>
       </footer>
