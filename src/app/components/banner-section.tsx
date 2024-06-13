@@ -6,9 +6,9 @@ export function BannerSection() {
   return (
     <section
       id="banner"
-      className="flex h-[30rem] w-full items-center justify-center bg-zinc-800 sm:h-[calc(100vh-6rem)]"
+      className="flex h-[30rem] w-full items-center justify-center bg-zinc-800 sm:h-[calc(100vh-5rem)]"
     >
-      <div className="centralized-container pb-4">
+      <div className="centralized-container lg:pb-4">
         <div className="flex max-w-[45rem] flex-col gap-8">
           <motion.h1
             className="text-xl font-semibold text-primary-blue sm:text-3xl md:text-4xl"
