@@ -21,7 +21,7 @@ export function ProjectsSection() {
       <div className="centralized-container">
         <div className="flex h-full w-full flex-col gap-10">
           <motion.h2
-            className="text-4xl text-white"
+            className="text-4xl font-bold text-white"
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 150 }}

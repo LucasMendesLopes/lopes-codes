@@ -4,6 +4,7 @@ import {
   Header,
   ProjectsSection,
   KnowledgeSection,
+  Footer,
 } from './components'
 
 export default function Home() {
@@ -14,14 +15,7 @@ export default function Home() {
       <AboutSection />
       <KnowledgeSection />
       <ProjectsSection />
-
-      <footer className="flex h-16 w-full items-center justify-center border-t border-zinc-300 text-center">
-        <div className="centralized-container ">
-          <span className="text-white">
-            2024 © Todos os direitos reservados
-          </span>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

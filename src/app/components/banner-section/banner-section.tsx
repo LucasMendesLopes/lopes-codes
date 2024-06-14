@@ -2,12 +2,35 @@
 
 import { motion } from 'framer-motion'
 
+import './styles.css'
+
 export function BannerSection() {
+  const buttonContainerAnim = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.6,
+      },
+    },
+  }
+
+  const buttonAnim = {
+    hidden: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: 'easeOut',
+      },
+    },
+  }
+
   return (
-    <section
-      id="banner"
-      className="flex h-[30rem] w-full items-center justify-center bg-zinc-800 sm:h-[calc(100vh-5rem)]"
-    >
+    <section className="flex h-[30rem] w-full items-center justify-center bg-zinc-800 sm:h-[calc(100vh-5rem)]">
       <div className="centralized-container lg:pb-4">
         <div className="flex max-w-[45rem] flex-col gap-8">
           <motion.h1
@@ -32,17 +55,30 @@ export function BannerSection() {
             digitais impactantes.
           </motion.span>
 
-          <motion.a
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
-            href="#about"
-            className="w-full rounded-2xl border-2 border-primary-blue p-4 text-center text-lg font-semibold
-                text-white duration-300 sm:w-72 lg:hover:scale-105
-                lg:hover:border-white lg:hover:text-primary-blue"
+          <motion.div
+            variants={buttonContainerAnim}
+            initial="hidden"
+            animate="show"
+            className="flex flex-col gap-5 sm:flex-row sm:gap-10"
           >
-            Saiba mais
-          </motion.a>
+            <motion.a
+              variants={buttonAnim}
+              href="#about"
+              className="banner-button"
+            >
+              Saiba mais
+            </motion.a>
+
+            <motion.a
+              variants={buttonAnim}
+              href="/files/curriculo.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="banner-button lg:hover:w-80"
+            >
+              Baixar currículo
+            </motion.a>
+          </motion.div>
         </div>
       </div>
     </section>

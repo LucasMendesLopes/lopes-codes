@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Lopes Codes',
   icons: Logo.src,
   description:
-    'Transformo ideias em projetos inovadores que fazem a diferença. Minha experiência em desenvolvimento web me capacita a criar soluções que se destacam. Estou preparado para contribuir e impulsionar através de soluções digitais impactantes.',
+    'Transformo ideias em projetos inovadores que fazem a diferença. Estou preparado para contribuir e impulsionar através de soluções digitais impactantes.',
 }
 
 export default function RootLayout({
