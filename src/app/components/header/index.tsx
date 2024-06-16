@@ -22,16 +22,22 @@ export function Header() {
 
           <div className="md:hidden">
             <button
-              className="flex size-6 flex-col items-center justify-between rounded-sm border border-white p-1"
+              className="flex h-7 w-8 flex-col items-center justify-between rounded-sm p-1"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <span className="h-[.125rem] w-full rounded-sm bg-white"></span>
-              <span className="h-[.125rem] w-full rounded-sm bg-white"></span>
-              <span className="h-[.125rem] w-full rounded-sm bg-white"></span>
+              <span
+                className={`h-[.125rem] w-full rounded-sm bg-white ${isOpen && 'translate-y-3 rotate-45'} transition-all duration-300`}
+              />
+              <span
+                className={`h-[.125rem] w-full rounded-sm bg-white ${isOpen && 'opacity-0'} transition-all duration-300`}
+              />
+              <span
+                className={`h-[.125rem] w-full rounded-sm bg-white ${isOpen && '-translate-y-1.5 -rotate-45'} transition-all duration-300`}
+              />
             </button>
 
             <nav
-              className={`absolute left-0 top-12 flex transition-all duration-200 ease-out [&>*]:transition-all ${isOpen ? 'h-96 p-3 [&>*]:opacity-100' : 'h-0 p-0 [&>*]:opacity-0'} w-full flex-col items-center justify-between gap-6 bg-zinc-900 font-sans text-lg font-semibold text-white`}
+              className={`absolute left-0 top-12 flex transition-all duration-200 ease-out [&>*]:transition-all ${isOpen ? 'h-96 p-3 [&>*]:opacity-100' : 'h-0 p-0 [&>*]:opacity-0'} w-full flex-col items-center justify-between gap-6 bg-zinc-900 font-sans text-lg font-semibold text-white duration-300`}
               onClick={() => setIsOpen(false)}
             >
               <Link href="#about">Sobre</Link>
