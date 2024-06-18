@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mobile-nav{
+    @apply absolute left-0 top-12 flex transition-all ease-out [&>*]:transition-all w-full flex-col items-center justify-between gap-6 bg-zinc-900 font-sans text-lg font-semibold text-white duration-300
+}
+
+.mobile-button{
+    @apply h-[.125rem] w-full rounded-sm bg-white transition-all duration-300
+}

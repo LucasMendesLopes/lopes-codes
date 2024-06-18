@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .nav-item{
     @apply inline-block after:block after:origin-left after:scale-x-0 after:border-b-2 after:border-primary-blue after:transition-transform after:content-[''] hover:text-white hover:after:scale-x-100
 }
