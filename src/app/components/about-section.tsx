@@ -19,9 +19,8 @@ export function AboutSection() {
             <Image
               src={Moto}
               alt="Eu e minha esposa, em cima de uma moto azul, numa linda estrada, repleta de árvores"
-              placeholder="blur"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: 'cover' }}
               className="rounded-2xl"
             />
           </motion.div>

@@ -2,9 +2,12 @@
 
 import { motion } from 'framer-motion'
 import { ProjectCard } from './components/project-card'
+import { MyFinances } from '../../../../assets/images'
+import { NoProjectCard } from './components/no-project-card'
+import { MongoDbIcon, NodeJsIcon, ReactIcon, TSIcon } from '@/assets'
 
 export function ProjectsSection() {
-  const container = {
+  const ProjectsSectionAnim = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -24,25 +27,30 @@ export function ProjectsSection() {
             className="text-4xl font-bold text-white"
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 150 }}
             transition={{ ease: 'easeOut', duration: 0.5, delay: 0.2 }}
           >
             Projetos
           </motion.h2>
 
           <motion.div
-            className="grid h-full w-full grid-cols-1 items-center justify-center gap-4 md:grid-cols-2 lg:grid-cols-3"
-            variants={container}
+            className="grid h-full w-full grid-cols-1 items-center justify-center gap-6 md:grid-cols-2"
+            variants={ProjectsSectionAnim}
             initial="hidden"
             whileInView="show"
-            exit="hidden"
           >
-            <ProjectCard title="Projeto 1" />
-            <ProjectCard title="Projeto 2" />
-            <ProjectCard title="Projeto 3" />
-            <ProjectCard title="Projeto 4" />
-            <ProjectCard title="Projeto 5" />
-            <ProjectCard title="Projeto 6" />
+            <ProjectCard
+              title="My Finances"
+              text="O My Finances é um sistema desenvolvido para que você tenha um melhor controle sobre as suas finanças. Conta com uma interface intuitiva e simples de utilizar."
+              bg={MyFinances}
+              techs={[ReactIcon, TSIcon, NodeJsIcon, MongoDbIcon]}
+              projectUrl="https://my-finances-web.vercel.app/"
+              projectRepositoryUrl="https://github.com/LucasMendesLopes/my-finances-web"
+            />
+            <NoProjectCard />
+            <NoProjectCard />
+            <NoProjectCard />
+            <NoProjectCard />
+            <NoProjectCard />
           </motion.div>
         </div>
       </div>
