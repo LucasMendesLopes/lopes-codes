@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button{
+    @apply mt-8 inline-block w-full rounded-2xl border-2 border-transparent bg-primary-blue p-4 text-center text-lg font-semibold text-white duration-300 sm:w-72 lg:hover:border-primary-blue lg:hover:bg-transparent lg:hover:text-primary-blue
+}

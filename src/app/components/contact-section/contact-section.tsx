@@ -1,14 +1,52 @@
 'use client'
 
+import { zodResolver } from '@hookform/resolvers/zod'
 import { motion } from 'framer-motion'
+import { useForm } from 'react-hook-form'
+import { z } from 'zod'
+import { Input } from './components/input'
+
+import './styles.css'
+
+const emailRegex = /^(?!.*\.\.)[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+
+const contactFormSchema = z.object({
+  name: z
+    .string({ message: 'Digite seu nome' })
+    .trim()
+    .min(1, { message: 'Digite seu nome' }),
+  email: z
+    .string({ message: 'Digite seu e-mail' })
+    .trim()
+    .min(1, { message: 'Digite seu e-mail' })
+    .email({ message: 'E-mail inválido!' })
+    .regex(emailRegex),
+  text: z.string().trim().min(1, { message: 'Digite uma mensagem' }),
+})
+
+type contactFormData = z.infer<typeof contactFormSchema>
 
 export function ContactSection() {
+  const {
+    register,
+    handleSubmit,
+    control,
+    formState: { errors },
+  } = useForm<contactFormData>({
+    resolver: zodResolver(contactFormSchema),
+  })
+
+  const onSubmit = (data: contactFormData) => {
+    console.log('errors :>> ', errors)
+    console.log('data :>> ', data)
+  }
+
   return (
     <section
       className="section-container bg-zinc-800 2xl:h-screen 2xl:p-0"
       id="contact"
     >
-      <div className="centralized-container ">
+      <div className="centralized-container">
         <div className="flex h-full w-full flex-col gap-10">
           <motion.h2
             className="text-4xl font-bold text-white"
@@ -20,36 +58,37 @@ export function ContactSection() {
             Contato
           </motion.h2>
 
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="flex flex-col gap-4">
-              <input
-                type="text"
-                id="name"
-                className="text-gray-900 text-md block w-full rounded-lg p-3 outline-none"
+              <Input
+                name="name"
                 placeholder="nome"
-                required
+                control={control}
+                errorMessage={errors.name?.message}
               />
 
-              <input
-                type="email"
-                id="email"
-                className="bg-gray-50 text-gray-900 text-md block w-full rounded-lg p-3 outline-none"
+              <Input
+                name="email"
                 placeholder="e-mail"
-                required
+                control={control}
+                errorMessage={errors.email?.message}
               />
 
-              <textarea
-                id="text"
-                className="bg-gray-50 text-gray-900 text-md block min-h-56 w-full rounded-lg p-3 outline-none"
-                placeholder="mensagem"
-                required
-              />
+              <div className="flex flex-col gap-2">
+                <textarea
+                  id="text"
+                  className="text-gray-900 text-md min-h-56 w-full rounded-lg p-3 outline-none"
+                  placeholder="mensagem"
+                  {...register('text')}
+                />
+
+                {errors.text && (
+                  <span className="text-red-600">{errors.text.message}</span>
+                )}
+              </div>
             </div>
 
-            <button
-              type="submit"
-              className="mt-8 inline-block w-full rounded-2xl border-2 border-transparent bg-primary-blue p-4 text-center text-lg font-semibold text-white duration-300 sm:w-72 lg:hover:border-primary-blue lg:hover:bg-transparent lg:hover:text-primary-blue"
-            >
+            <button type="submit" className="button">
               Enviar
             </button>
           </form>
