@@ -5,8 +5,12 @@ import { motion } from 'framer-motion'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { Input } from './components/input'
+import emailjs from '@emailjs/browser'
+import toast, { Toaster } from 'react-hot-toast'
 
 import './styles.css'
+import { useState } from 'react'
+import { CircleNotch } from '@phosphor-icons/react'
 
 const emailRegex = /^(?!.*\.\.)[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
 
@@ -21,24 +25,52 @@ const contactFormSchema = z.object({
     .min(1, { message: 'Digite seu e-mail' })
     .email({ message: 'E-mail inválido!' })
     .regex(emailRegex),
-  text: z.string().trim().min(1, { message: 'Digite uma mensagem' }),
+  message: z.string().trim().min(1, { message: 'Digite uma mensagem' }),
 })
 
 type contactFormData = z.infer<typeof contactFormSchema>
 
 export function ContactSection() {
+  const [isLoading, setIsLoading] = useState(false)
+
   const {
     register,
     handleSubmit,
     control,
+    reset,
     formState: { errors },
   } = useForm<contactFormData>({
     resolver: zodResolver(contactFormSchema),
   })
 
   const onSubmit = (data: contactFormData) => {
-    console.log('errors :>> ', errors)
-    console.log('data :>> ', data)
+    setIsLoading(true)
+
+    const { name, email, message } = data
+
+    const templateParams = {
+      name,
+      email,
+      message,
+    }
+
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        templateParams,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY,
+      )
+      .then(() => {
+        toast.success('Mensagem enviada com sucesso!')
+      })
+      .catch(() => {
+        toast.error('Erro ao enviar a mensagem, tente novamente mais tarde.')
+      })
+      .finally(() => {
+        reset()
+        setIsLoading(false)
+      })
   }
 
   return (
@@ -46,6 +78,8 @@ export function ContactSection() {
       className="section-container bg-zinc-800 2xl:h-screen 2xl:p-0"
       id="contact"
     >
+      <Toaster position="bottom-right" />
+
       <div className="centralized-container">
         <div className="flex h-full w-full flex-col gap-10">
           <motion.h2
@@ -76,20 +110,30 @@ export function ContactSection() {
 
               <div className="flex flex-col gap-2">
                 <textarea
-                  id="text"
+                  id="message"
                   className="text-gray-900 text-md min-h-56 w-full rounded-lg p-3 outline-none"
                   placeholder="mensagem"
-                  {...register('text')}
+                  {...register('message')}
                 />
 
-                {errors.text && (
-                  <span className="text-red-600">{errors.text.message}</span>
+                {errors.message && (
+                  <span className="text-red-600">{errors.message.message}</span>
                 )}
               </div>
             </div>
 
-            <button type="submit" className="button">
-              Enviar
+            <button
+              type="submit"
+              className={`button ${isLoading && 'lg:border-primary-blue lg:bg-transparent'}`}
+            >
+              {isLoading ? (
+                <CircleNotch
+                  className="animate-spin text-white lg:text-primary-blue"
+                  size={30}
+                />
+              ) : (
+                'Enviar'
+              )}
             </button>
           </form>
         </div>
