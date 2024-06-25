@@ -1,6 +1,8 @@
 'use client'
+
 import { Coffee, Image as Picture } from '@phosphor-icons/react'
 import { motion } from 'framer-motion'
+
 import { ProjectCardAnim } from '../animation'
 
 export function NoProjectCard() {

@@ -1,11 +1,12 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import { ProjectCard } from './components/project-card'
-import { MyFinances } from '../../../../assets/images'
-import { NoProjectCard } from './components/no-project-card'
 import { MongoDbIcon, NodeJsIcon, ReactIcon, TSIcon } from '@/assets'
+import { motion } from 'framer-motion'
+
+import { MyFinances } from '../../../../assets/images'
 import { ProjectsSectionAnim } from './animation'
+import { NoProjectCard } from './components/no-project-card'
+import { ProjectCard } from './components/project-card'
 
 export function ProjectsSection() {
   return (

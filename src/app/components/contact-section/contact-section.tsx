@@ -1,15 +1,17 @@
 'use client'
 
-import { zodResolver } from '@hookform/resolvers/zod'
-import { motion } from 'framer-motion'
-import { useForm } from 'react-hook-form'
-import { z } from 'zod'
-import { Input } from './components/input'
 import emailjs from '@emailjs/browser'
-import toast, { Toaster } from 'react-hot-toast'
-import './styles.css'
-import { useState } from 'react'
+import { zodResolver } from '@hookform/resolvers/zod'
 import { CircleNotch } from '@phosphor-icons/react'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import toast, { Toaster } from 'react-hot-toast'
+import { z } from 'zod'
+
+import { Input } from './components/input'
+
+import './styles.css'
 
 const emailRegex = /^(?!.*\.\.)[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
 

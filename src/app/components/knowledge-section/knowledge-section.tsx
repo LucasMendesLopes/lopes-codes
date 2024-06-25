@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import {
   CSSIcon,
   HTMLIcon,
@@ -15,8 +14,10 @@ import {
   GithubIcon,
   GitlabIcon,
 } from '@/assets'
-import { KnowledgeCard } from './components/knowledge-card'
+import { motion } from 'framer-motion'
+
 import { KnowledgeContainerAnim } from './animation'
+import { KnowledgeCard } from './components/knowledge-card'
 
 export function KnowledgeSection() {
   return (

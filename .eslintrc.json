@@ -3,7 +3,30 @@
     "next/core-web-vitals",
     "@rocketseat/eslint-config/next"
   ],
+  "plugins": [
+    "import-helpers"
+  ],
   "rules": {
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^react/",
+          "/^next/",
+          "module",
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ],
     "@typescript-eslint/no-explicit-any": "off"
   }
 }
