@@ -3,32 +3,9 @@
 import { motion } from 'framer-motion'
 
 import './styles.css'
+import { buttonAnim, buttonContainerAnim } from './animation'
 
 export function BannerSection() {
-  const buttonContainerAnim = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.6,
-      },
-    },
-  }
-
-  const buttonAnim = {
-    hidden: {
-      opacity: 0,
-    },
-    show: {
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: 'easeOut',
-      },
-    },
-  }
-
   return (
     <section className="flex h-[30rem] w-full items-center justify-center bg-zinc-800 sm:h-[calc(100vh-5rem)]">
       <div className="centralized-container lg:pb-4">

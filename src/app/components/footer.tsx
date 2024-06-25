@@ -4,7 +4,7 @@ import { ArrowUp } from '@phosphor-icons/react'
 
 export function Footer() {
   return (
-    <footer className="relative flex h-16 w-full items-center justify-center border-t border-zinc-300 text-center">
+    <footer className="relative flex h-16 w-full items-center justify-center border-t border-zinc-600 text-center">
       <div className="centralized-container flex items-center justify-between sm:block">
         <span className="text-white">2024 © Todos os direitos reservados</span>
 

@@ -16,19 +16,9 @@ import {
   GitlabIcon,
 } from '@/assets'
 import { KnowledgeCard } from './components/knowledge-card'
+import { KnowledgeContainerAnim } from './animation'
 
 export function KnowledgeSection() {
-  const KnowledgeContainerAnim = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.4,
-      },
-    },
-  }
-
   return (
     <section
       className="section-container bg-zinc-800 2xl:h-screen 2xl:p-0"

@@ -7,7 +7,6 @@ import { z } from 'zod'
 import { Input } from './components/input'
 import emailjs from '@emailjs/browser'
 import toast, { Toaster } from 'react-hot-toast'
-
 import './styles.css'
 import { useState } from 'react'
 import { CircleNotch } from '@phosphor-icons/react'
@@ -81,19 +80,23 @@ export function ContactSection() {
       <Toaster position="bottom-right" />
 
       <div className="centralized-container">
-        <div className="flex h-full w-full flex-col gap-10">
+        <div className="flex h-full w-full flex-col gap-10 overflow-x-hidden">
           <motion.h2
             className="text-4xl font-bold text-white"
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 150 }}
             transition={{ ease: 'easeOut', duration: 0.5, delay: 0.2 }}
           >
             Contato
           </motion.h2>
 
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="flex flex-col gap-4">
+          <form onSubmit={handleSubmit(onSubmit)} className="overflow-hidden">
+            <motion.div
+              className="flex flex-col gap-4"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: 'easeOut', duration: 0.8, delay: 0.6 }}
+            >
               <Input
                 name="name"
                 placeholder="nome"
@@ -120,11 +123,14 @@ export function ContactSection() {
                   <span className="text-red-600">{errors.message.message}</span>
                 )}
               </div>
-            </div>
+            </motion.div>
 
-            <button
+            <motion.button
               type="submit"
               className={`button ${isLoading && 'lg:border-primary-blue lg:bg-transparent'}`}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.5, ease: 'easeOut' }}
             >
               {isLoading ? (
                 <CircleNotch
@@ -134,7 +140,7 @@ export function ContactSection() {
               ) : (
                 'Enviar'
               )}
-            </button>
+            </motion.button>
           </form>
         </div>
       </div>

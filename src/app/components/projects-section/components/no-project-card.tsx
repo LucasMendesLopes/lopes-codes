@@ -1,23 +1,9 @@
 'use client'
 import { Coffee, Image as Picture } from '@phosphor-icons/react'
 import { motion } from 'framer-motion'
+import { ProjectCardAnim } from '../animation'
 
 export function NoProjectCard() {
-  const ProjectCardAnim = {
-    hidden: {
-      opacity: 0,
-      scale: 0.8,
-    },
-    show: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        ease: 'easeOut',
-      },
-    },
-  }
-
   return (
     <motion.div
       className="flex h-[30rem] w-full flex-col items-center justify-between rounded-2xl bg-zinc-700"

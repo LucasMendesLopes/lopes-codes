@@ -5,20 +5,9 @@ import { ProjectCard } from './components/project-card'
 import { MyFinances } from '../../../../assets/images'
 import { NoProjectCard } from './components/no-project-card'
 import { MongoDbIcon, NodeJsIcon, ReactIcon, TSIcon } from '@/assets'
+import { ProjectsSectionAnim } from './animation'
 
 export function ProjectsSection() {
-  const ProjectsSectionAnim = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.4,
-        ease: 'easeOut',
-      },
-    },
-  }
-
   return (
     <section className="section-container pb-20" id="projects">
       <div className="centralized-container">

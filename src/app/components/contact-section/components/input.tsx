@@ -1,16 +1,15 @@
-import { ChangeEvent } from 'react'
+import { ChangeEvent, InputHTMLAttributes } from 'react'
 import { Control, Controller } from 'react-hook-form'
 
 type IInput = {
   name: string
-  placeholder: string
   control: Control<any>
-  errorMessage?: string
-}
+  errorMessage: string | undefined
+} & InputHTMLAttributes<HTMLInputElement>
 
-export function Input({ name, control, placeholder, errorMessage }: IInput) {
+export function Input({ name, control, errorMessage, ...props }: IInput) {
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    e: ChangeEvent<HTMLInputElement>,
     onChange: (text: string) => void,
   ) => {
     const text = e.target.value
@@ -22,14 +21,13 @@ export function Input({ name, control, placeholder, errorMessage }: IInput) {
     <Controller
       name={name}
       control={control}
-      render={({ field: { value, onChange } }) => (
+      render={({ field: { onChange } }) => (
         <div className="flex flex-col gap-2">
           <input
             type="text"
-            value={value || ''}
-            placeholder={placeholder}
             className="text-gray-900 text-md block w-full rounded-lg p-3 outline-none"
             onChange={(e) => handleChange(e, onChange)}
+            {...props}
           />
           {errorMessage && <span className="text-red-600">{errorMessage}</span>}
         </div>
