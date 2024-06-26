@@ -1,5 +1,6 @@
-import { Logo2 } from '@/assets'
 import Image from 'next/image'
+
+import { Logo2 } from '@/assets'
 
 import { MobileNavbar, WebNavbar } from './components'
 

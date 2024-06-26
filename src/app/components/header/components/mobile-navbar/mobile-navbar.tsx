@@ -1,7 +1,8 @@
 'use client'
 
-import Link from 'next/link'
 import { useState } from 'react'
+
+import Link from 'next/link'
 
 import './styles.css'
 import { navItems } from '../../constants'

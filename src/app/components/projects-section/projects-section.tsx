@@ -32,11 +32,15 @@ export function ProjectsSection() {
               title="My Finances"
               text="O My Finances é um sistema desenvolvido para que você tenha um melhor controle sobre as suas finanças. Conta com uma interface intuitiva e simples de utilizar."
               bg={MyFinances}
-              techs={[ReactIcon, TSIcon, NodeJsIcon, MongoDbIcon]}
+              techs={[
+                { title: 'React JS', image: ReactIcon },
+                { title: 'TypeScript', image: TSIcon },
+                { title: 'Node JS', image: NodeJsIcon },
+                { title: 'Mongo DB', image: MongoDbIcon },
+              ]}
               projectUrl="https://my-finances-web.vercel.app/"
               projectRepositoryUrl="https://github.com/LucasMendesLopes/my-finances-web"
             />
-            <NoProjectCard />
             <NoProjectCard />
             <NoProjectCard />
             <NoProjectCard />

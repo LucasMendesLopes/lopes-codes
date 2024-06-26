@@ -1,14 +1,18 @@
 'use client'
-import { motion } from 'framer-motion'
+import { Tooltip } from 'react-tooltip'
+
 import Image, { StaticImageData } from 'next/image'
-import { Export, GithubLogo } from '@phosphor-icons/react'
+
+import { Eye, GithubLogo } from '@phosphor-icons/react'
+import { motion } from 'framer-motion'
+
 import { ProjectCardAnim } from '../animation'
 
 interface IProjectCard {
   title: string
   text: string
   bg: StaticImageData
-  techs: StaticImageData[]
+  techs: { title: string; image: StaticImageData }[]
   projectUrl: string
   projectRepositoryUrl: string
 }
@@ -44,26 +48,43 @@ export function ProjectCard({
         <div className="flex w-full items-center justify-between">
           <div className="flex gap-1 text-white">
             {techs.map((tech, index) => (
-              <Image key={index} src={tech} alt="" className="size-8" />
+              <div key={index}>
+                <Image
+                  data-tooltip-id={tech.title}
+                  data-tooltip-content={tech.title}
+                  src={tech.image}
+                  alt=""
+                  className="size-8"
+                />
+                <Tooltip id={tech.title} />
+              </div>
             ))}
           </div>
 
-          <div className="flex gap-1 text-white">
+          <div className="flex gap-2 text-white">
             <a
+              data-tooltip-id="see-project"
+              data-tooltip-content="Visualizar"
               href={projectUrl}
               target="_blank"
-              className="rounded-md bg-zinc-600 p-1 lg:hover:bg-zinc-800"
+              className="rounded-md bg-zinc-600 p-2 lg:hover:bg-zinc-800"
             >
-              <Export size={25} />
+              <Eye size={25} />
             </a>
 
+            <Tooltip id="see-project" />
+
             <a
+              data-tooltip-id="see-repository"
+              data-tooltip-content="Repositório"
               href={projectRepositoryUrl}
               target="_blank"
-              className="rounded-md bg-zinc-600 p-1 lg:hover:bg-zinc-800"
+              className="rounded-md bg-zinc-600 p-2 lg:hover:bg-zinc-800"
             >
               <GithubLogo size={25} />
             </a>
+
+            <Tooltip id="see-repository" />
           </div>
         </div>
       </div>
