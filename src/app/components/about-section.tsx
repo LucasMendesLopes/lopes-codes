@@ -13,7 +13,7 @@ export function AboutSection() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            exit={{ y: 0 }}
+            viewport={{ once: true }}
             transition={{ ease: 'linear', duration: 0.5, delay: 0.2 }}
             className="relative h-96 w-full md:size-[31.25rem]"
           >
@@ -31,7 +31,7 @@ export function AboutSection() {
               className="text-3xl font-semibold text-primary-blue"
               initial={{ opacity: 0, x: 150 }}
               whileInView={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 150 }}
+              viewport={{ once: true }}
               transition={{ ease: 'easeOut', duration: 0.5, delay: 0.5 }}
             >
               Sobre mim
@@ -41,7 +41,7 @@ export function AboutSection() {
               className="flex flex-col gap-4"
               initial={{ opacity: 0, x: 150 }}
               whileInView={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 150 }}
+              viewport={{ once: true }}
               transition={{ ease: 'easeOut', duration: 0.5, delay: 0.7 }}
             >
               <p className="text-white">

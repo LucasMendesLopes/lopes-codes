@@ -17,6 +17,7 @@ export function ProjectsSection() {
             className="text-4xl font-bold text-white"
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{ ease: 'easeOut', duration: 0.5, delay: 0.2 }}
           >
             Projetos
@@ -27,6 +28,7 @@ export function ProjectsSection() {
             variants={ProjectsSectionAnim}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             <ProjectCard
               title="My Finances"

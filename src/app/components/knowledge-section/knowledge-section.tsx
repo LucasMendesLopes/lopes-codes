@@ -31,7 +31,7 @@ export function KnowledgeSection() {
             className="text-4xl font-bold text-white"
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 150 }}
+            viewport={{ once: true }}
             transition={{ ease: 'easeOut', duration: 0.5, delay: 0.2 }}
           >
             Conhecimentos
@@ -42,7 +42,7 @@ export function KnowledgeSection() {
             variants={KnowledgeContainerAnim}
             initial="hidden"
             whileInView="show"
-            exit="hidden"
+            viewport={{ once: true }}
           >
             <KnowledgeCard image={HTMLIcon} text="HTML" />
             <KnowledgeCard image={CSSIcon} text="CSS" />
