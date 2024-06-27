@@ -11,7 +11,7 @@ export function BannerSection() {
       <div className="centralized-container lg:pb-4">
         <div className="flex max-w-[45rem] flex-col gap-8">
           <motion.h1
-            className="text-xl font-semibold text-primary-blue sm:text-3xl md:text-4xl"
+            className="text-2xl font-semibold text-primary-blue sm:text-3xl md:text-4xl"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}

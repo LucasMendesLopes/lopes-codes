@@ -28,7 +28,7 @@ export function KnowledgeSection() {
       <div className="centralized-container">
         <div className="flex h-full w-full flex-col gap-10">
           <motion.h2
-            className="text-4xl font-bold text-white"
+            className="text-4xl font-bold text-white md:text-center"
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -38,7 +38,7 @@ export function KnowledgeSection() {
           </motion.h2>
 
           <motion.div
-            className="flex h-full w-full flex-wrap items-center justify-between gap-4 sm:justify-start"
+            className="flex h-full w-full flex-wrap items-center justify-between gap-4 md:justify-center"
             variants={KnowledgeContainerAnim}
             initial="hidden"
             whileInView="show"
