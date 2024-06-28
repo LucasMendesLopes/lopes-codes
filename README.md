@@ -33,4 +33,12 @@ Pelo terminal:
 - Vá até a pasta que você acabou de clonar. Exemplo: `cd user/projetos/lopes-codes`
 - Utilizando **npm** ou **yarn**, instale as dependências do projeto. Exemplo: execute o comando `yarn` ou `npm i`
 
+## Envio de e-mail
+
+Siga os passos do video: https://www.youtube.com/watch?v=Zbg1BHOVzRg
+
+## Variáveis de Ambiente - ENVS
+
+- Copie o arquivo .env.exemple presente na pasta `configs`, cole na na raiz, renomeie para .env.local e substitua as informaçãoes.
+
 ## Agora, basta executar `yarn dev` ou `npm run dev`
