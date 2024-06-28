@@ -56,7 +56,8 @@ export function ProjectCard({
                   alt=""
                   className="size-8"
                 />
-                <Tooltip id={tech.title} />
+
+                <Tooltip id={tech.title} className="hidden lg:block" />
               </div>
             ))}
           </div>
@@ -72,7 +73,7 @@ export function ProjectCard({
               <Eye size={25} />
             </a>
 
-            <Tooltip id="see-project" />
+            <Tooltip id="see-project" className="hidden lg:block" />
 
             <a
               data-tooltip-id="see-repository"
@@ -84,7 +85,7 @@ export function ProjectCard({
               <GithubLogo size={25} />
             </a>
 
-            <Tooltip id="see-repository" />
+            <Tooltip id="see-repository" className="hidden lg:block" />
           </div>
         </div>
       </div>
