@@ -9,7 +9,10 @@ export function Footer() {
         <span className="text-white">2024 © Todos os direitos reservados</span>
 
         <button
-          onClick={() => window.scrollTo({ top: 0 })}
+          onClick={() => {
+            history.pushState({}, '', '/')
+            window.scrollTo({ top: 0 })
+          }}
           className="group/button flex size-10 items-center justify-center rounded-lg border border-primary-blue text-white sm:absolute sm:right-10 sm:top-1/2 sm:-translate-y-1/2"
         >
           <ArrowUp
