@@ -1,9 +1,18 @@
 'use client'
 
-import { MongoDbIcon, NodeJsIcon, ReactIcon, TSIcon } from '@/assets'
+import {
+  MongoDbIcon,
+  NextIcon,
+  NodeJsIcon,
+  ReactIcon,
+  TSIcon,
+  TailwindIcon,
+  LopesCodes,
+  MyFinances,
+  StyledIcon,
+} from '@/assets'
 import { motion } from 'framer-motion'
 
-import { MyFinances } from '../../../../assets/images'
 import { ProjectsSectionAnim } from './animation'
 import { NoProjectCard } from './components/no-project-card'
 import { ProjectCard } from './components/project-card'
@@ -37,11 +46,26 @@ export function ProjectsSection() {
               techs={[
                 { title: 'React JS', image: ReactIcon },
                 { title: 'TypeScript', image: TSIcon },
+                { title: 'Styled Components', image: StyledIcon },
                 { title: 'Node JS', image: NodeJsIcon },
                 { title: 'Mongo DB', image: MongoDbIcon },
               ]}
               projectUrl="https://my-finances-web.vercel.app/"
               projectRepositoryUrl="https://github.com/LucasMendesLopes/my-finances-web"
+            />
+
+            <ProjectCard
+              title="Lopes Codes"
+              text="Site desenvolvido com o intuito de mostrar a minha experiência como Desenvolvedor Frontend, sendo possível visualizar informações sobre mim, projetos desenvolvidos e tecnologias pelas quais eu tenho conhecimento."
+              bg={LopesCodes}
+              techs={[
+                { title: 'React JS', image: ReactIcon },
+                { title: 'Next JS', image: NextIcon },
+                { title: 'TypeScript', image: TSIcon },
+                { title: 'Tailwind CSS', image: TailwindIcon },
+              ]}
+              projectUrl="https://lopescodes.com/"
+              projectRepositoryUrl="https://github.com/LucasMendesLopes/lopes-codes"
             />
             <NoProjectCard />
             <NoProjectCard />
