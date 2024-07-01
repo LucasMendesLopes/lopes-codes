@@ -13,7 +13,9 @@ As seguintes tecnologias foram usadas na construção do projeto:
 - React JS
 - Next JS
 - TypeScript
+- React Hook Form
 - Tailwind CSS
+- Email JS
 - Framer Motion
 
 ## Pré-requisitos
