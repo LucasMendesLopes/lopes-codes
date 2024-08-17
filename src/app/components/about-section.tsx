@@ -49,17 +49,23 @@ export function AboutSection() {
                 uma trajetória sólida e diversificada.
               </p>
 
-              <p className="text-white">Iniciei minha carreira na
-                Digital Business, onde fui responsável pelo desenvolvimento de
-                páginas web responsivas e animações publicitárias para
-                multinacionais, dentre elas, VW, GM, Nestlé, Ferrero. Esse
-                trabalho inicial me proporcionou uma base robusta em Frontend,
-                permitindo-me adquirir habilidades essenciais e uma compreensão
-                profunda das melhores práticas para a criação de interfaces
-                atrativas e eficazes.</p>
+              <p className="text-white">
+                Iniciei minha carreira na Digital Business, onde fui responsável
+                pelo desenvolvimento de páginas web responsivas e animações
+                publicitárias para multinacionais, dentre elas, VW, GM, Nestlé,
+                Ferrero. Esse trabalho inicial me proporcionou uma base robusta
+                em Frontend, permitindo-me adquirir habilidades essenciais e uma
+                compreensão profunda das melhores práticas para a criação de
+                interfaces atrativas e eficazes.
+              </p>
 
               <p className="text-white">
-                Após, integrei a equipe da Paipe Tecnologia e Inovação, onde desenvolvi sistemas para diferentes ramos e organizações, usando responsividade, consumo de APIs REST e tecnologias tais como JavaScript, TypeScript, React JS, Next JS, Context API, Styled Components, Material-UI (MUI), Scrum, Kanban, Git, GitLab, Trello e Jira.
+                Após, integrei a equipe da Paipe Tecnologia e Inovação, onde
+                desenvolvi sistemas para diferentes ramos e organizações,
+                aplicando responsividade, consumo de APIs REST e tecnologias
+                tais como JavaScript, TypeScript, React JS, Next JS, Context
+                API, Styled Components, Material-UI (MUI), Scrum, Kanban, Git,
+                GitLab, Trello e Jira.
               </p>
 
               <p className="text-white">
