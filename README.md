@@ -6,6 +6,8 @@
 
 Site desenvolvido com o intuito de mostrar a minha experiência como Desenvolvedor Frontend, sendo possível visualizar informações sobre mim, projetos desenvolvidos e tecnologias pelas quais eu tenho conhecimento.
 
+Link: https://lopescodes.com/
+
 ## Tecnologias
 
 As seguintes tecnologias foram usadas na construção do projeto:
