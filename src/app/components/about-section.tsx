@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 
-import { Moto } from '@/assets'
+import { MyPhoto } from '@/assets'
 import { motion } from 'framer-motion'
 
 export function AboutSection() {
@@ -18,8 +18,8 @@ export function AboutSection() {
             className="relative h-96 w-full md:size-[31.25rem]"
           >
             <Image
-              src={Moto}
-              alt="Eu e minha esposa, em cima de uma moto azul, numa linda estrada, repleta de árvores"
+              src={MyPhoto}
+              alt=""
               fill
               style={{ objectFit: 'cover' }}
               className="rounded-2xl"
@@ -74,11 +74,6 @@ export function AboutSection() {
                 e familiaridade com diversas práticas e ferramentas do mercado.
                 Esse conhecimento técnico, aliado à minha experiência prática,
                 permite-me enfrentar desafios com confiança e eficiência.
-              </p>
-
-              <p className="text-white">
-                OBS: Quando não estou programando, gosto de pegar a estrada e
-                sentir o vento no rosto.
               </p>
             </motion.div>
           </motion.div>

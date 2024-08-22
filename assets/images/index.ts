@@ -1,5 +1,5 @@
-import LopesCodes from './lopes-codes.jpg'
-import Moto from './moto.jpg'
-import MyFinances from './my-finances.jpg'
+import LopesCodes from "./lopes-codes.jpg";
+import MyPhoto from "./my-photo.jpg";
+import MyFinances from "./my-finances.jpg";
 
-export { Moto, MyFinances, LopesCodes }
+export { MyPhoto, MyFinances, LopesCodes };
